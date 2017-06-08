@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                java -version
                 sh '''
+                    java -version
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
